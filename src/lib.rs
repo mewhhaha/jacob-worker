@@ -22,13 +22,8 @@ pub async fn main(req: Request, env: Env) -> Result<Response> {
 
     router
         .get_async("/rooms/:name/*", get_room)
-        .get("/:file", get_static)
         .run(req, env)
         .await
-}
-
-fn get_static<D>(req: Request, ctx: RouteContext<D>) -> Result<Response> {
-    ctx.
 }
 
 async fn get_room<D>(req: Request, ctx: RouteContext<D>) -> Result<Response> {
