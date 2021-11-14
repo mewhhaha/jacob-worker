@@ -1,0 +1,11 @@
+GET https://jacob.horrible.workers.dev/contestants
+
+###
+
+GET https://jacob.horrible.workers.dev/contestants/jt
+
+###
+
+PUT https://jacob.horrible.workers.dev/contestants/jt
+
+5
